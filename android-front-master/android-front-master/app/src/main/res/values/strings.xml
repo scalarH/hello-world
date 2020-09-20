@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">쏭페이</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="bottom_navigation_label_1">메인</string>
+    <string name="bottom_navigation_label_2">내역</string>
+    <string name="bottom_navigation_label_3">내 정보</string>
+</resources>

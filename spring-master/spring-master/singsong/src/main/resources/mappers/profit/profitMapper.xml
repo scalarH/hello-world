@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="profitmapper">
+	
+	
+    <insert id="writeprofit" parameterType="com.singsong.singsong.dto.profit.Profit">
+        insert into Profit(p_o_id,p_price,p_date,p_type) values(#{p_o_id},#{p_price},#{p_date},#{p_type})
+    </insert>
+
+    <select id="getList" resultType="com.singsong.singsong.dto.profit.Profit">
+        select * from Profit where p_o_id = #{id}
+    </select>
+
+</mapper>

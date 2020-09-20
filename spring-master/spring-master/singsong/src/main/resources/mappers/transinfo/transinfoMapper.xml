@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="transinfomapper">
+	
+	
+    <insert id="writetransinfo" parameterType="com.singsong.singsong.dto.Transinfo.Transinfo">
+        INSERT INTO TransInfo(t_u_id,t_money,t_date,t_type) 
+        VALUES(#{t_u_id},#{t_money},#{t_date},#{t_type})
+    </insert>
+
+    <select id="getList" resultType="com.singsong.singsong.dto.Transinfo.Transinfo">
+        select * from TransInfo where t_u_id = #{id}
+    </select>
+
+	
+
+
+
+</mapper>
